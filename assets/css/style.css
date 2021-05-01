@@ -1,0 +1,28 @@
+/* Layout */
+#header {background: #f6f5ef; height: 120px;}
+#mainWrap {background: url(../img/2021_summer1_bg.jpg) no-repeat; background-size: cover; background-position: center; width: 100%; height: 646px;}
+#noticeWrap {height: 62px;}
+#rewardWrap {background: #1e3932; height: 167px;}
+#BeanWrap {background: url(../img/2021_summer1_bean_bg.jpg) no-repeat; height: 573px;}
+#newReserveWrap {background: url(../img/reserve_sundried_brazil_bg2.jpg); height: 400px;}
+#menuWrap {background: url(../img/winter_fav_bg.jpg); height: 800px;}
+#reserve2Wrap {height: 695px;}
+#storeWrap {background: url(../img/store.bg.jpg); height: 400px;}
+#footer {}
+
+/* container */
+.header_container {width: 1100px; margin: 0 auto;}
+
+/* header */
+.header {display: flex; justify-content: space-between;}
+.header .main_logo img {width: 75px; height: 75px;}
+
+.header .gnb .sub-gnb {}
+.header .gnb .sub-gnb ul {display: flex;}
+.header .gnb .sub-gnb li {margin-right: 20px;}
+.header .gnb .sub-gnb li a{padding: 5px;}
+.header .gnb .sub-gnb li a:hover{text-decoration: underline;}
+
+.header .gnb .main-gnb {height: 89px;}
+.header .gnb .main-gnb ul {display: flex;}
+.header .gnb .main-gnb li a {}
