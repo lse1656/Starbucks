@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- font-awesome -->
-    <link rel="stylesheet" href="./assets/css/font-awesome.css">
-    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3c13170a9a.js"></script>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
@@ -25,6 +24,26 @@
                             <img src="./assets/img/logo.png" alt="스타벅스">
                         </a>
                     </h1>
+                    <!-- tablet gnb -->
+                    <div class="tablet-gnb">
+                        <ul>
+                            <li class="tablet-gnb01">
+                                <a href="#">
+                                    <img src="./assets/img/icon_user_m.png" alt="">
+                                </a>
+                            </li>
+                            <li class="tablet-gnb02">
+                                <a href="#">
+                                    <img src="./assets/img/icon_spot_m.png" alt="">
+                                </a>
+                            </li>
+                            <li class="tablet-gnb03">
+                                <button>
+                                    <img src="./assets/img/btn_berger_m.png" alt="">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="gnb">
                         <nav class="sub-gnb">
                             <ul>
@@ -33,15 +52,42 @@
                                 <li><a href="#">Customer Service & Ideas</a></li>
                                 <li><a href="#">Find a store</a></li>
                             </ul>
+                            <button class="search">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
                         </nav>
                         <nav class="main-gnb">
                             <ul>
-                                <li><a href="#">COFFEE</a></li>
-                                <li><a href="#">MENU</a></li>
-                                <li><a href="#">STORE</a></li>
-                                <li><a href="#">RESPONSIBILITY</a></li>
-                                <li><a href="#">STARBUCKS REWARDS</a></li>
-                                <li><a href="#">WHAT'S NEW</a></li>
+                                <li class="gnb-nav01">
+                                    <h2>
+                                        <a href="#">COFFEE</a>
+                                    </h2>
+                                </li>
+                                <li class="gnb-nav02">
+                                    <h2>
+                                        <a href="#">MENU</a>
+                                    </h2>
+                                </li>
+                                <li class="gnb-nav03">
+                                    <h2>
+                                        <a href="#">STORE</a>
+                                    </h2>
+                                </li>
+                                <li class="gnb-nav04">
+                                    <h2>
+                                        <a href="#">RESPONSIBILITY</a>
+                                    </h2>
+                                </li>
+                                <li class="gnb-nav05">
+                                    <h2>
+                                        <a href="#">STARBUCKS REWARDS</a>
+                                    </h2>
+                                </li>
+                                <li class="gnb-nav06">
+                                    <h2>
+                                        <a href="#">WHAT'S NEW</a>
+                                    </h2>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -51,9 +97,17 @@
     </header>
     <!-- //header -->
     <section id="mainWrap">
-        <div class="container">
+        <div class="main-wrap_container">
             <div class="row">
-                <h2>여름 추천 메뉴</h2>
+                <div class="mian-wrap">
+                    <h2 class="ir_so">여름 추천 메뉴</h2>
+                    <div class="slogan">
+                        <img src="./assets/img/2021_summer1_slogan.png" alt="Find your taste one with the sun">
+                    </div>
+                    <div class="main-wrap_btn">
+                        <a href="#">자세히 보기</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
