@@ -1,11 +1,13 @@
 @charset "utf-8";
+@font-face {font-family: avenir; src: url(../font/AvenirLTStd-Book.otf); font-weight: 200;}
 
 /* 여백 초기화 */
 body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,table,th,td,tr,textarea,button,form,figure,figcaption{margin:0; padding:0;}
 
 /* a 링크 초기화 */
-a {color: #333; text-decoration: none;}
+a {color: #333; text-decoration: none; font-family: avenir;}
 a:hover {text-decoration: underline;}
+
 
 /* 폰트 초기화 */
 body, input, textarea, select, button, table {font-family:'Nanum Gothic', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #333; font-size: 13px; line-height: 1.5;}
