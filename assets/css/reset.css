@@ -1,8 +1,11 @@
 @charset "utf-8";
 @font-face {font-family: avenir; src: url(../font/AvenirLTStd-Book.otf); font-weight: 200;}
+@font-face {font-family: '맑은고딕'; src: url(../font/malgun.ttf);}
+
+/* body{overflow: hidden;} */
 
 /* 여백 초기화 */
-body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,table,th,td,tr,textarea,button,form,figure,figcaption{margin:0; padding:0;}
+body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,table,th,td,tr,textarea,button,form,figure,figcaption{margin:0; padding:0;box-sizing: border-box;}
 
 /* a 링크 초기화 */
 a {color: #333; text-decoration: none; font-family: avenir;}
@@ -11,6 +14,7 @@ a:hover {text-decoration: underline;}
 
 /* 폰트 초기화 */
 body, input, textarea, select, button, table {font-family:'Nanum Gothic', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #333; font-size: 13px; line-height: 1.5;}
+p{font-family: '맑은 고딕';}
 
 /* 폰트 스타일 초기화 */
 em,address {font-style: normal;}
@@ -19,7 +23,7 @@ em,address {font-style: normal;}
 ul,li,ol {list-style:none;}
 
 /* 제목 태그 초기화 */
-h1,h2,h3,h4,h5,h6 {font-size: 13px; font-weight: normal;}
+h1,h2,h3,h4,h5,h6 {font-size: 13px; font-weight: normal; font-family: '맑은 고딕';}
 
 /* 테두리 초기화 */
 img,fieldset {border:0 none;}

@@ -1,11 +1,11 @@
 /* Layout */
 #header {background: #f6f5ef; height: 120px; border-bottom: 1px solid #e5e5e5; border-top: 2px solid #000;}
-#mainWrap {position: relative; background: url(../img/2021_summer1_bg.jpg) no-repeat; background-size: cover; background-position: center; width: 100%; height: 646px;}
-#noticeWrap {display: flex; height: 62px;}
+#mainWrap {position: relative; background: url(../img/2021_summer1_bg.jpg) no-repeat; background-size: cover; background-position: center; width: 100%; height: 646px; overflow: hidden;}
+#noticeWrap                            {display: flex; height: 62px;}
 #noticeWrap .left-notice {background: #111; width: 50%; height: 100%;}
 #noticeWrap .right-notice {background-color: #f6f5ef;width: 50%; height: 100%;}
 #bannerWrap {display: none; height: 659px;}
-#rewardWrap {background: #1e3932; height: 167px;}
+#rewardWrap {background: #1e3932; height: 237px;}
 #BeanWrap {background: url(../img/2021_summer1_bean_bg.jpg) no-repeat; height: 573px;}
 #newReserveWrap {background: url(../img/reserve_sundried_brazil_bg2.jpg); height: 400px;}
 #menuWrap {background: url(../img/winter_fav_bg.jpg); height: 800px;}
@@ -18,13 +18,12 @@
 .main-wrap_container {width: 1080px; margin: 0 auto;}
 .notice-container {width: 500px; margin-left: auto;}
 .rnotice-container {width: 500px; margin-right: auto;}
+.reward-wrap_container {width: 1080px; margin: 0 auto;}
 
 /* tablet gnb */
 .tablet-gnb {display: none;}
 .tablet-gnb ul {display: flex;}
-.tablet-gnb li {}
 .tablet-gnb li a {display: inline-block; padding: 10px 20px;}
-.tablet-gnb li a img {}
 .tablet-gnb .tablet-gnb01 img{width: 25px; height: 30px;}
 .tablet-gnb .tablet-gnb02 img{width: 24px; height: 32px;}
 .tablet-gnb .tablet-gnb03 img{width: 28px; height: 26px;}
@@ -49,7 +48,6 @@
 .header .gnb .main-gnb li a:hover {background: #333; color: green;}
 
 /* mainWrap */
-.main-wrap {}
 .main-wrap .slogan {padding-top: 58px; margin-bottom: 30px; max-width: 254px;}
 .main-wrap .slogan img {display: block; width: 100%;}
 
@@ -72,6 +70,31 @@
 
 .right-notice {}
 
+/* rewardWrap */
+.reward-wrap {height: 237px; display: flex; color: white; padding: 30px 0 40px 0;}
+.reward-wrap .reward-logo {width: 16.3%; margin: 0 40px;}
+.reward-wrap .reward-logo img {display: block; width: 100%;}
+.reward-wrap .reward-conts {width: 83.7%;}
+.reward-wrap .reward-conts a {display: inline-block; color: white; border: 3px solid white; border-radius: 5px;}
+.reward-wrap .reward-conts strong {font-weight: 800;}
+
+.reward-wrap .reward-conts .info-cont {position: relative; margin-bottom: 38px;}
+.reward-wrap .reward-conts .info-cont::after {position: absolute; content: ' '; width: 100%; height: 1px; background: rgba(255,255,255,0.2); bottom: -20px; left: 0;}
+.reward-wrap .reward-conts .info-cont .info-text h3{
+font-size: 26px;}
+.reward-wrap .reward-conts .info-cont .info-text p{font-size: 17px;}
+.reward-wrap .reward-conts .info-cont .login-btn {position: absolute; right: 0; bottom: 0;}
+.reward-wrap .reward-conts .info-cont .login-btn a{
+    display: inline-block; padding: 0 18.5px; height: 38px; line-height: 38px;
+}
+.reward-wrap .reward-conts .info-cont .login-btn .sign_in { border-color: #00704a; background: #00704a;}
+
+.reward-wrap .reward-conts .gift-cont {position: relative;}
+.reward-wrap .reward-conts .gift-cont .gift-btn {position: absolute; right: 0; bottom: 0; width: 183px; height: 38px; box-sizing: border-box; text-align: center; line-height: 32px;}
+
+
+
+
 /* media query*/
 @media (max-width: 1290px){
     
@@ -81,20 +104,29 @@
     #header .row {padding-left: 20px;}
     .header_container {width: 100%;}
 
-    #mainWrap .row {padding: 0 45px;}
+    #mainWrap .row {padding: 0 39px;}
     .main-wrap_container {width: 100%;}
     .main-wrap .slogan {width: 24%;}
+
+    #rewardWrap .row {padding-right: 30px;}
+    .reward-wrap_container {width: 100%;}
+
+}
+
+@media (max-width: 1020px){
+    
 }
 
 @media (max-width:960px){
     .tablet-gnb {display: block;}
 
     #header {height: 70px; border-top: none;}
+    #header .row {padding-left: 10px;}
     .header {padding: 0; padding-top: 12px;}
     .header .gnb {display: none;}
     .header .main_logo img {width: 45px; height: 45px;}
 
-    .main-wrap .slogan {padding-top: 27px; width: 20%;}
+    .main-wrap .slogan {padding-top: 27px; width: 22%;}
 }
 
 @media (max-width: 870px){
@@ -111,9 +143,10 @@
 }
 
 @media (max-width: 640px){
-    #mainWrap {background: url(../img/2021_m_summer1_bg.jpg) no-repeat center; height: 240vh;}
-    #mainWrap .row {padding-left: 70px;}
-    .main-wrap .slogan {width: 63%; padding-top: 98px; max-width: 323px;}
+    #mainWrap {background: url(../img/2021_m_summer1_bg.jpg); background-size: contain; background-repeat: no-repeat; height: 298vw;}
+    #mainWrap .row {padding-left: 10%;}
+    .main-wrap .slogan {width: 63%; padding-top: 18%; max-width: 323px;}
+
     .main-wrap .drinks .pc_drink{display: none;}
     .main-wrap .drinks .drink .m_drink {display: block;}
     .main-wrap .drinks .drink01 {bottom: 51%; left: 56%; width: 44%; max-width: 270px;}
