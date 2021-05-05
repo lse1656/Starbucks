@@ -6,7 +6,7 @@
 #noticeWrap .right-notice {background-color: #f6f5ef;width: 50%; height: 100%;}
 #bannerWrap {display: none; height: 659px;}
 #rewardWrap {background: #1e3932;}
-#BeanWrap {background: url(../img/2021_summer1_bean_bg.jpg) no-repeat; height: 573px;}
+#BeanWrap {position: relative; background: url(../img/2021_summer1_bean_bg.jpg) no-repeat;background-position: center right;background-size: cover; height: 573px;}
 #newReserveWrap {background: url(../img/reserve_sundried_brazil_bean4_1.png) no-repeat; height: 400px;}
 #menuWrap {background: url(../img/winter_fav_bg.jpg); height: 800px;}
 #reserve2Wrap {height: 695px;}
@@ -92,15 +92,15 @@ font-size: 26px; word-break: keep-all;}
 .reward-wrap .reward-conts .gift-cont .gift-btn {position: absolute; right: 0; bottom: 0; width: 183px; height: 38px; box-sizing: border-box; text-align: center; line-height: 32px;}
 
 /* BeanWrap */
-.bean-wrap {display: flex; justify-content: center; padding: 60px 0;}
-.bean-wrap .bean-img {}
+.bean-wrap {display: flex; justify-content: center;}
+.bean-wrap .bean-img {position: absolute; left: 18%; bottom: 13%; width: 36%; max-width: 386px;}
 .bean-wrap .bean-img .pc-img {}
 .bean-wrap .bean-img .m-img {display: none;}
 
-.bean-wrap .bean-text {max-width: 386px;}
+.bean-wrap .bean-text {max-width: 386px; position: absolute; right: 17%; bottom: 41%; width: 28%; max-width: 321px;}
 .bean-wrap .bean-text .m-img {display: none;}
 
-.bean-wrap .bean-text .bean-btn {display: inline-block; width: 125px; height: 38px; margin-top: 30px; border: 2px solid #231815; border-radius: 5px; font-size: 15px; letter-spacing: -1px; display: flex; justify-content: center; align-items: center; transition: background .7s, color .7s;}
+.bean-wrap .bean-text .bean-btn {display: flex; justify-content: center; align-items: center;  width: 125px; height: 38px; margin-top: 30px; border: 2px solid #231815; border-radius: 5px; font-size: 15px; letter-spacing: -1px;transition: background .7s, color .7s;}
 .bean-wrap .bean-text .bean-btn:hover {background: black; color: white;}
 
 
