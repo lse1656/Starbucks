@@ -33,6 +33,9 @@
     .main-wrap .slogan {padding-top: 27px; width: 22%;}
 
     #BeanWrap {height: 60vw;}
+
+    #menuWrap {height: 1130px;}
+    .menu-wrap .menu-img {position: static; right: auto; bottom: auto; margin: 130px auto 0;}
 }
 
 @media (max-width: 870px){

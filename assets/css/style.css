@@ -6,9 +6,9 @@
 #noticeWrap .right-notice {background-color: #f6f5ef;width: 50%; height: 100%;}
 #bannerWrap {display: none; height: 659px;}
 #rewardWrap {background: #1e3932;}
-#BeanWrap {position: relative; background: url(../img/2021_summer1_bean_bg.jpg) no-repeat;background-position: center right;background-size: cover; height: 573px;}
+#BeanWrap {position: relative; background: url(../img/2021_summer1_bean_bg.jpg) no-repeat ;background-position: center right;background-size: cover; height: 573px;}
 #newReserveWrap {background: url(../img/reserve_sundried_brazil_bean4_1.png) no-repeat; height: 400px;}
-#menuWrap {position: relative; background: url(../img/fav_prod_bg_new.jpg) no-repeat center center fixed; background-size: auto 100%; height: 800px;}
+#menuWrap {position: relative; background: url(../img/fav_prod_bg_new.jpg) no-repeat center center fixed #45434c; background-size: auto 100%; height: 800px;}
 #reserve2Wrap {height: 695px;}
 #storeWrap {background: url(../img/store.bg.jpg); height: 400px;}
 #footer {}
@@ -106,4 +106,5 @@ font-size: 26px; word-break: keep-all;}
 /* menuWrap */
 .menu-wrap {}
 .menu-wrap .menu-text {}
-.menu-wrap .menu-img {width: 672px; h458}
+.menu-wrap .menu-text h3 {background: url(../img/fav_prod_txt01.png) no-repeat; height: 204px;}
+.menu-wrap .menu-img {position: absolute; right: 1%;bottom: 26%; width: 672px; height: 458px;}
